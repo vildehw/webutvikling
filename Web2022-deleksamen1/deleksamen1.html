@@ -1,0 +1,65 @@
+
+<!--Gjennom validering dukker det opp 16 errors og fem warnings.--> 
+
+<!DOCTYPE html> 
+<!--Feil nummer en. Manglet doctype tagen-->
+<html lang="nb"> 
+<!--Feil nummer to. Satte inn lang tag, for å angi språk-->
+     <head> 
+         <meta charset="UTF-8"> 
+         <!--Feil nummer tre. La til charset="UTF-8"-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">  
+         <!--Feil nummer fire. Manglet fnutter bak style.css--> 
+         <title>Web eksamen del 1</title> 
+     </head>  
+
+    <body> 
+    <!--Feil nummer fem. Head tagen var inni body tagen. Satte head tag over body-->
+        <nav> 
+            <h3>Logo</h3>   
+            <!--Feil nummer seks. Flere overskrifter hadde h1 tag. Endret tagen til logo fra h1 til h3-->
+                <ul> 
+                <!--Feil nummer syv. Manglet ul tag, satte inn disse-->
+                    <li> <a href="#">Boatswain schooner</a></li>
+                    <li> <a href="#">Account lookout</a></li>
+                    <li> <a href="#">Sail ho shrouds</a></li> 
+                </ul>  
+                
+                
+        </nav>
+        <header>
+            <h1>Yar Pirate Ipsum</h1>
+            <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
+            <a class="button" href="#">Les mer</a> 
+            <!--Feil nummer elleve. La til href="#" for å gjøre knappen klikkbar-->
+        </header>
+        <main>  
+        <!--Feil nummer åtte. Byttet fra div tag til main tag. For å at tagen skal passe til stylesheet i css-->
+            <article>
+                <h2>Prow scuttle</h2> 
+                <!--Feil nummer ni. Alle article tagene hadde h1 tager. Endret til h2 tag.-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a> 
+            </article> 
+            <!--Feil nummer ti. Manglet avsluttende article tag-->
+            <article>
+                <h2>Jack Tar transom</h2> 
+                <!--Feil nummer ni. Alle article tagene hadde h1 tager. Endret til h2 tag.-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+            <article>
+                <h2>Trysail Sail</h2> 
+                <!--Feil nummer ni. Alle article tagene hadde h1 tager. Endret til h2 tag.-->
+                <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.</p>
+                <a href="#">Les mer</a>
+            </article>
+        </main>
+        <footer>
+            <span>Twitter</span>
+            <span>Facebook</span>
+            <span>Instagram</span>
+        </footer>
+    </body>
+</html>
