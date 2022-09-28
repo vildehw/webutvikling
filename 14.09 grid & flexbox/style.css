@@ -15,7 +15,7 @@ header{
 }   
 header nav{
     display: flex; 
-    align-items: baseline; 
+    align-items: center; 
     justify-content: space-between; 
     padding: 1rem;
 } 
@@ -62,5 +62,6 @@ main article{
 }
 
 footer{
-    grid-area: footer;
+    grid-area: footer; 
+    background-color: black;
 }

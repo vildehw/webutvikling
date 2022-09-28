@@ -1,0 +1,15 @@
+@import 'color.scss';
+
+
+header{
+    background-color: $blue; 
+    padding: 1rem; 
+
+    h1{
+        color: #fff; 
+
+        &:hover{
+            color: #000;
+        }
+    }
+} 
