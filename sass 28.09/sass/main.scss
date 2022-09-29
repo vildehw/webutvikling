@@ -1,5 +1,11 @@
 @import 'color.scss';
 
+@mixin box-design($backC, $maxW, $width, $marg) {
+    background-color: $backC; 
+    max-width: $maxW; 
+    width: $width; 
+    margin: $marg;
+}
 
 header{
     background-color: $blue; 
@@ -12,4 +18,9 @@ header{
             color: #000;
         }
     }
-} 
+}  
+
+main{
+    @include box-design(blue, 600px, 100%, 0 auto); 
+    height: 300px;
+}
