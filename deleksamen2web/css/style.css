@@ -8,13 +8,14 @@
 
 #grid {
     display: grid; 
-    grid-template-areas:"header header"   
-                        "section aside" 
-                        "main main" 
-                        "footer footer";   
-    grid-template-columns: 1fr  
+    grid-template-areas:"header"   
+                        "section"  
+                        "aside"
+                        "main" 
+                        "footer";   
+    grid-template-columns: auto;   
+    
 } 
-
 
 header{
     grid-area: header; 
@@ -22,7 +23,7 @@ header{
 
 #header{   
     width: 100%; 
-    height: 60vh;
+    height: 50vh; 
     top: 40px;
     position: relative;   
     background-image: url("../img/header5.jpg");   
@@ -46,7 +47,7 @@ h3{
 #logo{
     width: 5rem; 
     height: auto;  
-    align-items: left; 
+    
 }  
 
 header nav{   
@@ -71,7 +72,7 @@ header nav{
 header nav ul li{
     list-style: none; 
     display: inline-block;  
-    padding: 1rem;   
+    padding: 0 1rem;   
 }  
 
 header nav ul li a{
@@ -123,7 +124,8 @@ main article{
 main section{
     grid-area: section;  
     flex-basis: 70%; 
-    flex-grow: 1; 
+    flex-grow: 1;  
+    border:#59485d;
 }  
 
 main aside{
@@ -131,19 +133,19 @@ main aside{
     flex-basis: 100%; 
     flex-grow: 1; 
     padding: 1rem; 
-    text-align: center; 
+    text-align: center;  
 }
 
 footer{
     grid-area: footer; 
     display: grid; 
-    height: 5rem; 
+    height: 6rem; 
     background-color: #735d78; 
     color: white; 
-    padding-left: 5rem; 
-    bottom: 0;
-}   
-
+}    
+footer{
+    padding: 1rem 0; 
+}
 
 footer ul li{
     padding: 3px 0; 
@@ -169,6 +171,10 @@ footer ul li a:hover{
                             "section section section aside" 
                             "main main main main" 
                             "footer footer footer footer";   
+    } 
+
+    #header{
+        height: 50vh;
     }
 
     header nav{
@@ -177,7 +183,7 @@ footer ul li a:hover{
         justify-content: space-between;   
         top: 0; 
         position: fixed; 
-        padding-left: 2rem;  
+        padding-left: 2rem;   
     }  
 
     #ham-icon{
