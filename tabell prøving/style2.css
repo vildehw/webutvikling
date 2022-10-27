@@ -1,0 +1,33 @@
+section{
+    display: flex; 
+    flex-basis: 70%; 
+    height: 500px;
+} 
+
+
+.grid-container {  
+    display : flex;
+    flex-basis: 25%; 
+    flex-wrap: wrap;
+    
+    /*display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0;
+    background-color: #2196F3;*/
+    padding: 10px;  
+  
+    
+    
+  }
+  
+  .grid-container > div { 
+    flex-basis:20%;  
+    flex-wrap: wrap;
+    max-height: 100px;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;  
+    border: 1px solid rgb(12, 11, 11);
+  }
+  
+  
