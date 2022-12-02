@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap'); 
+/*Font hentet fra: https://fonts.google.com/specimen/Open+Sans  */
+
+*{
+    box-sizing: border-box;  
+    font-family: 'Open Sans', sans-serif;  
+}  
+
+#grid {
+    display: grid; 
+    grid-template-areas:"header"   
+                        "main" 
+                        "footer";  
+} 
+/* header */
+header{
+    grid-area: header; 
+}   
+
+#header{     
+    display: grid;
+    grid-area: header;  
+    width: 100%;  
+    height: 150px; 
+    margin-top: 70px; 
+    background-image: url("../img/header5.jpg");   
+    /*Headerbildet er hentet fra https://www.pexels.com/nb-no/bilde/hoy-hvit-bla-himmel-sky-2470655/ */  
+    background-position: center; 
+    background-size: cover; 
+}  
+
+#header h1{ 
+    text-align: left;  
+    font-size: 30px; 
+    padding-left: 3rem;  
+    padding-top: 2rem;
+    color:#59485d;
+}  
+
+#logo{
+    width: 60px; 
+    height: auto;  
+}  
+
+header nav{   
+    display: flex;  
+    position: absolute;
+    justify-content: space-between; 
+    align-items: center;  
+    width: 100%;
+    padding: 1rem 2rem; 
+    top: 0; 
+    height: 70px;  
+    background-color: #735d78;
+}   
+
+#ham-icon{
+    color: white;  
+} 
+
+
+#navbar{
+    width: 250px; 
+    background-color: #D1B3C4; 
+    top: 54px; 
+    right: 0; 
+    position: absolute; 
+    padding: 1rem 1rem; 
+    
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 1rem 1rem;
+}  
+
+header nav ul li a{
+    text-decoration: none; 
+    color: white;  
+}  
+
+/*-----main------*/
+
+main{   
+    grid-area: main;  
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: center;   
+    align-items: center;
+    flex-direction: row;  
+    min-height: 50vh; 
+    padding: 1rem 1rem; 
+    font-size: 16px; 
+    line-height: 25px; 
+}   
+
+h3{
+    color: #59485d
+}  
+
+#frontSection {
+    grid-area: section;  
+    flex-basis: 70%; 
+    flex-grow: 1;  
+    border:#59485d;
+}  
+
+#contactbtn{
+    flex-basis: 100%; 
+    flex-grow: 1; 
+    text-align: center;   
+} 
+
+.article-box{ 
+    flex-basis: 100%; 
+    flex-grow: 1;  
+    padding: 1rem; 
+    min-width: 300px; 
+    text-align: left;  
+    border-radius: 25px;
+    box-shadow: 0px 0px 25px #D4D4D4; 
+}    
+
+.imgArtBox{
+    width: 100%;
+} 
+
+.button{
+    background-color: #735d78; 
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    border-radius: 25px; 
+}  
+/*Inspirasjon til kode på knapper er hentet fra: https://www.w3schools.com/css/css3_buttons.asp*/
+
+.button:hover{
+    background-color: #B392AC; 
+}
+
+.img{ 
+    width: 70%;
+    display: block; 
+    margin: auto;   
+    padding: 1rem;
+}
+
+h2{
+    padding: 1rem 0; 
+    color: #59485d;
+}  
+
+/*--kart--*/ 
+
+#map{
+   max-width: 500px;
+}
+
+#map iframe{
+    
+  width:100%;
+}  
+  /*---kontakskjema--*/ 
+
+#contactForm { 
+    display: grid;
+    
+}  
+
+#contactForm h3{ 
+    text-align: center;
+} 
+
+.formgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.3em 0.6em;
+    grid-auto-flow: dense;
+    align-items: center; 
+    margin: 0 auto; 
+    width: 60%;
+  }
+  
+  input, textarea, label{
+    grid-column: 1 / 3;
+    width: auto;
+    margin: 5px; 
+  }   
+  input{
+    padding: 3px;
+  }
+
+  #submit{
+    grid-column: 1 / 3; 
+    width: auto;
+    margin: 0; 
+  }
+  textarea{
+    height:200px; 
+    top: 0;
+  }  
+#contactInfo{ 
+    display: flex;
+    width: 40%; 
+    flex-grow: 1;
+}
+ #contactInfo ul{
+    list-style: none; 
+    text-decoration: none; 
+    
+ } 
+ #contactInfo ul li a{
+    font-size: 24px;
+    text-decoration: none; 
+    color: black;
+ }  
+ /*https://www.sitepoint.com/css-grid-web-form-layout/ */
+
+ #shareButtons button{
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px; 
+    border: none; 
+    border-radius: 50%;
+ }  
+ #shareButtons button a{
+    color: white;
+ }
+ /*:hover {
+    opacity: 0.7;
+} */
+#facebook{ 
+    background-color: #3B5998;  
+} 
+
+#twitter{
+    background-color: #55ACEE;
+} 
+
+#pinterest{
+    background-color: #cb2027;
+}
+/*https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+
+/*-----tabeller-----*/
+
+.table {
+    display: flex; 
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0; 
+    width: 100%; 
+} 
+
+.box {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 25%;  
+    padding: 1%;
+    overflow: hidden; 
+    list-style: none;
+    border: 1px solid grey;    
+    font-size: 14px; 
+}  
+
+.column {
+    width: 15%;
+}
+
+#box1{
+    border: none; 
+}
+  
+.box2 {
+    box-sizing: border-box;
+    flex-grow: 1;
+    width: 33%;  
+    padding: 1%;
+    overflow: hidden; 
+    list-style: none;
+    border: 1px solid grey;   
+    font-size: 14px;
+  } 
+
+  
+/*-----footer-----*/
+footer{
+    grid-area: footer; 
+    display: grid; 
+    height: 8rem; 
+    background-color: #735d78; 
+    color: white;  
+    padding: 1rem 0; 
+    bottom: 0;
+}    
+
+
+footer ul li{
+    padding: 3px 0; 
+    list-style: none; 
+}  
+
+footer ul li a{
+    text-decoration: none; 
+    color: white;    
+}  
+
+footer ul li a:hover{
+    color: #D1B3C4;
+} 
+
+@media only screen and (min-width: 600px) { 
+
+ #grid {
+        display: grid; 
+        grid-template-areas:"header header"   
+                            "section section" 
+                            "main main" 
+                            "footer footer";  
+    }  
+    
+    #header{
+        height: 200px; 
+        margin-top: 80px
+    } 
+
+    #header h1 {
+        font-size: 40px;
+        padding-left: 5rem; 
+        padding-top: 2rem;
+    }
+    
+    header nav {
+        height: 80px;
+    } 
+
+    #navbar{
+        top: 64px;
+    }
+
+    #logo{
+        width: 70px; 
+    }   
+    
+    main{
+        padding: 2rem 4rem; 
+        gap: 4rem;   
+        font-size: 16px;
+    }     
+
+    #frontSection{
+        flex-basis:60%;
+    } 
+    
+    
+    #contactbtn{ 
+        flex-basis: 15%;
+        padding-top: 3rem; 
+    }   
+    
+    article{
+        width: 95%;
+    } 
+    aside{
+        width: 95%;
+    }  
+
+    .formgrid {
+        grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr; 
+    } 
+    input, textarea {
+        grid-column: 2 / 6;
+    }  
+    label{
+        grid-column: 1 / 2;
+    }
+
+    #submit{
+        grid-column: 3 / 5;  
+    }
+
+ 
+    .box{
+        font-size: 16px; 
+        width: 25%;
+    } 
+    .column {
+        width: 25%;
+    }
+
+}
+
+@media only screen and (min-width: 900px){  /* desktop */
+    #grid{
+        width: 100%;
+        display: grid;
+        grid-template-areas:"header header header"   
+                            "main main main" 
+                            "footer footer footer";   
+    }  
+
+    #header{
+        height: 300px;  
+        margin-top: 100px;  
+
+    } 
+    #header h1 {
+        font-size: 50px;
+        padding-left: 8rem; 
+        padding-top: 4rem;
+    } 
+
+    header nav{  
+        top: 0; 
+        position: fixed; 
+        padding-left: 2rem;  
+        height: 100px;   
+        align-items: center; 
+        z-index: 2; 
+        /* https://stackoverflow.com/questions/39440393/getting-google-maps-to-stay-below-sticky-nav*/
+    }    
+    
+    #navbar{  
+        top: 0;
+        position: absolute;
+        background-color: transparent; 
+        width: fit-content;  
+        height: 100px;
+    } 
+
+    #navbar li{  
+        display: inline-block; 
+    }
+    
+
+    #logo{
+        width: 80px;  
+    }  
+
+    
+    #ham-icon{
+        display: none;
+    } 
+
+    header nav ul{
+        text-align: center; 
+        display: block !important;
+    } 
+
+
+    header nav ul li{
+        display: inline-block; 
+        
+    }
+
+    main{
+        padding: 4rem 8rem; 
+        gap: 4rem;   
+        font-size: 18px; 
+        line-height: 30px;
+    }     
+
+    .article-box{
+        flex-basis: 20%;  
+        
+    } 
+
+    #frontSection{
+        flex-basis:65%;
+    }
+
+    #contactbtn{ 
+        flex-basis: 15%;
+        padding-top: 3rem;  
+    }   
+    
+    article{
+        width: 90%;
+    } 
+    aside{
+        width: 90%;
+    } 
+
+    .img{
+        padding: 2rem 0;
+    } 
+
+    
+    .box{
+        font-size: 18px; 
+        padding: 2%;
+    } 
+
+    .box2{
+        font-size: 18px;
+    }
+} 
+
+/*Inspirasjon til fargepalett hentet fra: https://coolors.co/palette/f7d1cd-e8c2ca-d1b3c4-b392ac-735d78 */
